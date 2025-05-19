@@ -31,9 +31,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace("com.gstory.file_preview")
-    }
+    // if (project.android.hasProperty("namespace")) {
+    //     namespace("com.gstory.file_preview")
+    // }
+
+    namespace = "com.gstory.file_preview"
 
     compileSdkVersion 34
 
